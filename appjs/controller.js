@@ -479,7 +479,6 @@ else
 
 //Profile
 myApp.controller('ProfileCtrl', ['$rootScope','$http','$location','$scope','$auth', 'Account',function($rootScope,$http,$location,$scope, $auth, Account) {
-
 //hide all divs
 $(".details").hide();
 
@@ -619,11 +618,3 @@ $http({method: 'GET', url: 'http://ros.kurukshetra.org.in/degrees.json'}).succes
     $scope.getProfile();
   }]);
 
-//downloadsController
-myApp.controller('downloadsController',['$rootScope','$scope','$http','$timeout' , '$auth','$route','Account','$location','SAAccessFac','$cookieStore',
-          function($rootScope,$scope,$http,$timeout,$auth,$route, Account,$location,SAAccessFac, $cookieStore){
-  alert("trying to download");
-  }]);
-
-                                                    
-    

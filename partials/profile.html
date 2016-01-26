@@ -1,0 +1,98 @@
+<style>
+p,h3{
+color:#fff !important;
+}
+select{
+color:#000 !important;
+}
+.desc{
+	text-align: justify;
+}
+html,body{
+	background-position: 0px 100px;
+}
+</style>
+<div class="container desc" style="padding-top:30px">
+<!--<a class="pull-right round-btn back-home" href="#/"><i class="fa fa-home "></i> Back to Home</a>-->
+	<form method="post" ng-submit="updateProfile()">
+	<div class="glContainer container paddingReset clearfix">
+		<div class="ribbontitle ">
+<div class="row">
+<div class="col-md-8">
+
+	<h3 > Hey there, <input type="text" style="font-size:2rem; width:auto;" placeholder="[Your Name]" ng-model="user.displayName"> </input>
+		</h3>
+</div>
+<div class="col-md-12">
+<h3 style="">k! id: {{kid}}</h3>
+</div>
+</div>
+
+</div>
+
+		<div class="profile col-md-10 col-md-push-1 col-xs-12 clearfix">
+			<p>
+			Email Id <input type="text" placeholder="[email id]" ng-model="user.email"/>
+                        </p>
+			 <p>
+			 City <input type="text" placeholder="[City]" ng-model="user.city" required/>
+</p>
+<p>
+ State <input type="text" placeholder="[State]" ng-model="user.state" required/>
+</p>
+<p>Country <input type="text" placeholder="[Country]" ng-model="user.country" required/>
+</p>
+<p>Phone Number<input type="text" placeholder="Phone Number" ng-model="user.contact" required/></p>
+			 
+			 <p>
+				</span> Student Ambassador Referral ( if any ) <input type="text" placeholder="[SA id]" pattern="[A-Za-z]{2}[0-9]{3}" title="Use student ambassador id" ng-model="user.refer"/></span>
+			 </p>
+			 <p>
+			 	Participant Type
+			 	<br/>
+			 	<input id='student' class="participant" name="student" type="radio" value="college" ng-model="user.type_of_user" required/><span class="gender">College</span>
+			 	<br/>
+			 	<input id='school' class="participant" name="student" type="radio" value="school" ng-model="user.type_of_user"/><span class="gender">School</span>
+			 	<br/>
+			 	<input id='working' class="participant" name="student" type="radio" value="working" ng-model="user.type_of_user"/><span class="gender">Working</span>
+			 	<br/>
+			 </p>
+			<div class="details student-details"><br>
+			<p>Year
+			 <select ng-model="user.year" id="student-year" class="selection">
+				 	<option value="" default selected>Year</option>
+				 	<option value="1">1</option>
+				 	<option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+		         </select>
+				</p>
+<br/>
+				 <p>College<select class= "selection" id="student-college" type="text" placeholder="[College]" ng-model="user.college" ng-options="college as college for college in colleges" class="selection">
+				 	 <option value="" default selected>College</option>
+				 </select></p><br>
+				 <div class="row">
+				 <div class="col-md-6">
+				 </div>
+				 <div class="col-md-6"></div>
+				 </div>
+				 <p>Course <select type="text" id="student-course" ng-model="user.course" ng-options="course as course for course in courses" class="selection">
+				 	 <option value="" default selected>Course</option>
+				 </select><br><br>
+				 </p>
+			</div>
+
+			<div class="details school-details">
+				 <p>School<input type="text" id="school-name" placeholder="[School Name]" ng-model="user.school"/>Grade <span class="detail"><input id="school-grade" type="text" placeholder="[Which grade are you in?]" ng-model="user.standard"/>
+				 </p>
+			</div>
+			<div class="details working-details">
+				 <p>Company<input id="company-name" type="text" placeholder="[Company Name]" ng-model="user.company"/>Designation <span class="detail"><input id="company-des" type="text" placeholder="[Enter your designation]" ng-model="user.designation"/>
+				 </p>
+			</div> 
+			 <p>
+			 <button class="updatebtn btn btn-success btn-lg">UPDATE</button>
+			 </p>
+		</div>
+	</div>
+
+</form>
+</div>

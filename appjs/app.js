@@ -3,7 +3,9 @@ myApp.config(['$routeProvider','$authProvider',function($routeProvider,$authProv
 console.log("gowtham check");
 
   $routeProvider
-  .when("/",{templateUrl:"partials/home.html",controller:'homeController'})
+  .when("/",{templateUrl:"partials/login.html",controller:'homeController'})
+  .when("/profile",{templateUrl:"partials/profile.html",controller:'ProfileCtrl'})
+  .when("/round0",{templateUrl:"partials/home.html",controller:'homeController'})
   .when("/round1",{templateUrl:"partials/round1.html",controller:'questionsController'})
   .when("/round2",{templateUrl:"partials/round2.html",controller:'questionsController'})
   .when("/round3",{templateUrl:"partials/round3.html",controller:'questionsController'})

@@ -42,6 +42,38 @@ ul{
 	padding-left: 0;
 	padding-right: 0;
 }
+.login-btn{
+	padding:20px;
+	font-size:4rem;
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	background:#333;
+	border-bottom:2px solid gold;
+	box-shadow:0px 10px 10px #222;
+}
+.login-btn-sm{
+	padding:10px;
+	font-size:1.3rem;
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	box-shadow:0px 5px 10px rgba(0,0,0,0.5);
+	color:#fff;
+	text-align: center;
+	cursor: pointer;
+}
+.fb{
+	background:rgb(31,73,120);
+}
+.google{
+	 background:#d34836
+}
+.login-btn:hover,.login-btn:active,.login-btn-sm:hover,.login-btn-sm:active{
+	-webkit-transform:translateY(2px);
+	transform:translateY(2px);
+	border-bottom-color: crimson;
+}
 .my-btn,#submit-ans{
 	background:#444;
 	text-align: center;
