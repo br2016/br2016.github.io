@@ -473,7 +473,6 @@
 
         var visible_times = parse_times(diff, old_diff, this.data.total_duration, this.data.drawn_units, floor);
         var all_times = parse_times(diff, old_diff, secondsIn["Years"], allUnits, floor);
-
         var i = 0;
         var j = 0;
         var lastKey = null;

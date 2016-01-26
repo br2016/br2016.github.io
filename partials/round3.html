@@ -22,8 +22,13 @@
 			<li ng-click=""><a class="level-btn level-btn-sm" href="">14</a></li>
 			<li ng-click=""><a class="level-btn level-btn-sm" href="">15</a></li>
 		</ul>
-  <div class="col-md-3">
-    <div id="DateCountdown" style="margin-top:80px" data-date="2015-01-01 00:00:00" style="width: 100%;"></div>
+ <div class="col-md-3">
+	<div class="col-md-12">
+    	<div id="DateCountdown" style="margin-top:80px" data-date="2015-01-01 00:00:00" style="width: 100%;"></div>
+	</div>
+    <div class="col-md-12">
+      <div id="timer" ng-click="timer_toggle()" class="hideme">HIDE TIMER</div>
+    </div>
   </div>
 
 		<div class="col-md-6">
@@ -37,7 +42,8 @@
 			<div class="desc" style="margin-top:10px">
 			<i class="fa fa-key"></i> CLUE <i class="fa fa-arrow-right"></i> <span class=" bold gold clue">CLUE COMES HERE</span>
 			<br/><br/>
-			<a class="my-btn" id="next-level" href="#/round4"><i class="fa fa-asterisk gold"></i> DECRYPT TO FINISH</a>
+			<a class="my-btn" id="next-level" href="#/round4"><i class="fa fa-asterisk gold"></i> DECRYPT TO FINISH</a><br/><br/>
+			<p><i class="fa fa-asterisk gold"></i> Right answers will reveal the clue to crack the next level</p>
 			</div>
 		</div>
 </div>

@@ -109,6 +109,21 @@ $("#DateCountdown").TimeCircles({
     }
 });
 
+//hide timer
+$scope.timer_toggle = function(){
+  if($("#timer").hasClass("hideme"))
+{
+    $("canvas").fadeOut(0);
+    $(".time_circles").fadeOut(0);
+    $("#timer").addClass("showme").removeClass("hideme").text("SHOW TIMER");
+  }
+  else
+  {
+    $("canvas").fadeIn(0);
+    $(".time_circles").fadeIn(0);
+    $("#timer").addClass("hideme").removeClass("showme").text("HIDE TIMER"); 
+  }
+};
 
 //variables
 $scope.rospics = [];

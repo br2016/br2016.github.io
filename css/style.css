@@ -18,6 +18,10 @@ a:active, a:focus{
 ul{
 	list-style:none;
 }
+.muted{
+	color:rgba(255,255,255,0.7);
+	margin-top:-10px;
+}
 .black{
 	color:#000;
 }
@@ -209,7 +213,7 @@ ul{
 }
 .level-btn{
 	background:teal;
-	padding:15px;
+	padding:12px;
 	font-size: 1.8rem;
 	font-weight:bold;
 	box-shadow:0px 3px 3px rgba(0,0,0,0.2);
@@ -465,3 +469,25 @@ td{
 .table-hover th:hover{
 	background:rgba(0,0,0,0) !important;
 }
+#timer{
+    color: #fff;
+    background: teal;
+    position: fixed;
+    padding: 10px;
+    float:left;
+    cursor: pointer;
+    border-bottom:3px solid #fff;
+}
+.hideme{
+		margin-top: 70px;
+}
+.showme{
+	border-bottom-color:crimson;
+	color:gold;
+	font-weight: bold;
+	margin-top:0px;
+}
+.showme:hover{
+	border-bottom-color: teal;
+	color:#fff;
+	}
